@@ -20,7 +20,7 @@ https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/
 
 Or for the conda environment you can use the following command lines:
 
-~$ conda install -c anaconda tensorflow-gpu==1.8.0 
+~$ conda install -c anaconda tensorflow-gpu
 
 ~$ sudo apt-get install build-essential cmake
 
