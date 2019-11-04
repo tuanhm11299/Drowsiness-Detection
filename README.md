@@ -2,13 +2,17 @@
 
 
 
-
+### Môn: Máy học trong thị giác máy tính - Lớp CS332.K11.KHCL
+### Giảng viên hướng dẫn: 
+Tiến sĩ Mai Tiến Dũng
 ### Sinh viên thực hiện:
 Huỳnh Minh Tuấn - 17521212
 
 Nguyễn Thanh Tú - 17521201
 
 Hoàng Ngọc Quân - 17520934
+### Link bài báo cáo của nhóm:
+https://www.overleaf.com/3764583157vxbnpkssqgmk?fbclid=IwAR3F-vDtqWcmXeszBrFn9bGJGtoKg1HLtlwQKMH71z9jzqq2vm5_3VqvcAQ
 ### Đồ án được thực hiện Ubuntu 18.04 (LTS) với tensorflow phiên bản từ 1.8 trở đi
 
 This proposed temporal model uses blink features to detect both early and deep drowsiness with an intermediate regression step, where drowsiness is estimated with a score from 0 to 10. 
