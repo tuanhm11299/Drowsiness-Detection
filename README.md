@@ -1,12 +1,10 @@
-#  Realistic Dataset and Baseline Temporal Model for Early Drowsiness Detection
+#  Đề tài: Phát hiện hiện tượng buồn ngủ
 
 
 
 
 
-### These codes were tested on Ubuntu 18.04 (LTS) with tensorflow version 1.14
-
-The supporting code and data used for the paper:"A Realistic Dataset and Baseline Temporal Model for Early Drowsiness Detection":
+### Đồ án được thực hiện Ubuntu 18.04 (LTS) với tensorflow phiên bản từ 1.8 trở đi
 
 This proposed temporal model uses blink features to detect both early and deep drowsiness with an intermediate regression step, where drowsiness is estimated with a score from 0 to 10. 
 
@@ -43,7 +41,7 @@ Or for the conda environment you can use the following command lines:
 ~$ conda install -c conda-forge opencv
 
 	
-### 1- Run Blink_Video.py:
+### 1-Chạy file Blink_Video.py:
 
   This file is fed by the input video(the directory should be given to the path variable). Then, it detects the blinks and outputs four features of all blinks in a text file.
   
@@ -55,13 +53,13 @@ Or for the conda environment you can use the following command lines:
   
   "shape_predictor_68_face_landmarks.dat" is the pre-trained facial landmark detector inside the dlib library.
 
-### 2-Run Preprocessing.py
+### 2-Chạy file Preprocessing.py
 
   This file gets three text files (blink features in three drowsiness levels) as the main input and preprocesses them for the subsequent steps. The outputs are .npy files.
   
   For convenience, these .npy files ({Blinks, BlinksTest, Labels, LabelsTest}_30_FoldX.npy) are provided for each X as the test fold used for five fold cross validation. For example Blinks_30_Fold4.npy is the training set consisted of all the folds except fold 4, and  BlinksTest_30_Fold4.npy is the data from fold 4. If decided to apply this method to a different dataset, then the hard coded "start_indices" array in Training.py should be adjusted accordingly. More info about "start_indices is mentioned in the Training.py". Finally, to clarify, these .npy files are generated from step 1 and 2 on the UTA-RLDD dataset so one might decide to generate their own   .npy files to train. 
 
-### 3-Run Training.py:
+### 3-Chạy file Training.py:
 
   This code is used to train based on the .npy files generated in step 2. The model details and hyperparameters are all set here. This code is also used for testing. Here, one fold from the dataset (UTA-RLDD in this case) is picked as the test fold and the other four are used for training. The output is the training and test results and accuracies based on the pre-defined metrics in the paper.
  
@@ -79,10 +77,11 @@ Or for the conda environment you can use the following command lines:
 
 NOTE: References used for each code are mentioned on top of each code.
 
-#### Citation:
-All documents (such as publications, presentations, posters, etc.) that report results, analysis, research, or equivalent that were obtained by using this source should cite the following research paper:
+#### Nguồn nhóm tham khảo:
+Đồ án của nhóm được dựa trên 1 bài báo của Reza Ghoddoosian về việc xây dựng mô hình phát hiện buồn ngủ sớm trên các phương tiện giao thông chỉ với camera thông thường trên điện thoại hoặc camera máy tính.
+Tìm hiểu thêm tại:
 https://arxiv.org/abs/1904.07312
 
-#### Link to the UTA-RLDD dataset:
+#### Link đến UTA-RLDD dataset:
 
 https://sites.google.com/view/utarldd/home
