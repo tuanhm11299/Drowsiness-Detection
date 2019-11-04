@@ -5,7 +5,9 @@
 
 ### Sinh viên thực hiện:
 Huỳnh Minh Tuấn - 17521212
+
 Nguyễn Thanh Tú - 17521201
+
 Hoàng Ngọc Quân - 17520934
 ### Đồ án được thực hiện Ubuntu 18.04 (LTS) với tensorflow phiên bản từ 1.8 trở đi
 
